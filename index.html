@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-grid">
+            <div class="logo">Blancaflor Sanchez</div>
+                <nav>
+                    <label class="label" for="toggle"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="toggle">
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="#gallery" class="scroll">Gallery</a></li>
+                        <li><a href="#contactme" class="scroll">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <div class="wallpaper">
+    </div>
+
+    <h2 class="heading" id="padding">Languages</h2>
+    <section class="panels">
+        <div class="main-grid">
+            <div class="tiles mainsr2">
+                <i class="fab fa-java fa-4x"></i>
+                <h4>JAVA</h4>
+            </div>
+            <div class="tiles mainsr3">
+                <i class="fab fa-python fa-4x"></i>
+                <h4>PYTHON</h4>
+            </div>
+            <div class="tiles mainsr1">
+                <i class="fab fa-html5 fa-4x"></i>
+                <h4>HTML</h4>
+            </div>
+            <div class="tiles mainsr4">
+                <i class="fas fa-file-code fa-4x"></i>
+                <h4>SQL</h4>
+            </div>
+        </div>
+    </section>
+    <div class="about-me" id="aboutme"> 
+        <h1 class="heading">About Me</h1>
+        <section class="panels">
+            <div class="main-grid">
+                <div class="tiles tile-img main3">
+                    <img src="images/climbing.png">
+                    <h4>Climbing</h4>
+                    <p>I got into climbing recently and it's a great way to physically challenge myself.</p>
+                </div>
+                <div class="tiles tile-img main3">
+                    <img src="images/camping.png">
+                    <h4>Camping</h4>
+                    <p>Ever since I was a kid, camping with family and friends has always been a great experience.</p>
+                </div>
+                <div class="tiles tile-img main3">
+                    <img src="images/hiking.png">
+                    <h4>Hiking</h4>
+                    <p>My love of the outdoors is endless. Going on hikes and getting to enjoy nature is one of my favorite passtimes.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="main-padding" id="gallery">
+        <h1 class="heading">Gallery</h1>
+        <div class="container mainsr2">
+            <div class="container-gallery baguetteBoxOne">
+                <div class="pic">
+                    <a href="images/mountain.png" data-caption="Image caption">
+                        <img src="images/mountain.png" alt="">
+                    </a>
+                </div>
+                <div class="pic">
+                    <a href="images/river.png" data-caption="Image caption">
+                        <img src="images/river.png" alt="">
+                    </a>
+                </div>
+                <div class="pic">
+                    <a href="images/hill.png" data-caption="Image caption">
+                        <img src="images/hill.png" alt="">
+                    </a>
+                </div>
+                <div class="pic">
+                    <a href="images/lake.png" data-caption="Image caption">
+                        <img src="images/lake.png" alt="">
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <section class="main-padding" id="contactme">
+        <div class="container box main1">
+                <h2 class="heading">Send A Message</h2>
+                <form class="contactform" action="hotel.php" method="POST" autocomplete>
+                    <label for="name" class="label-color">Name</label> <br>
+                    <input type="text" id="name" name="name"> <br>
+                    <label for="phone" class="label-color">Phone</label> <br>
+                    <input type="text" id="phone" name="phone"> <br>
+                    <label for="email" class="label-color">Email</label> <br>
+                    <input type="email" id="email" name="email"> <br>
+                    <label for="message" class="label-color">Write Message</label> <br>
+                    <textarea id="message" name="message" rows="10" cols="30"></textarea> <br>
+                    <input type="submit" value="Send Message" class="button"> <br>
+                </form> 
+        </div>
+    </section> 
+    <section class="main-padding box box1">
+        <h1 class="heading">Contact Me</h1>
+        <div class="container footer-grid" id="footer">
+            <div class="footer-links">
+                <h4 class="sub-heading">LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/blancaflor-sanchez-6750b3183/" class="fab fa-linkedin fa-4x"></a>
+            </div>
+            <div class="footer">
+                <h4 class="sub-heading">E-mail</h4>
+                <p>
+                    <a href="#">blancaflorsanchez@gmail.com</a>
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4 class="sub-heading">GitHub</h4>
+                <a href="https://github.com/blxnca" class="fab fa-github fa-4x"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="main-footer">
+            <i class="far fa-copyright"></i> Copyright 2022 Blancaflor Sanchez <br>
+            <script>
+                var date = document.lastModified;
+                document.write(date);
+            </script>
+        </div>
+    </footer>
+</body>
+</html>
